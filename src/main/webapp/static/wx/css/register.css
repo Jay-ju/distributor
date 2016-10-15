@@ -1,0 +1,121 @@
+*{
+font-weight: normal;
+}
+.lan{
+width:100%;
+height:21.94rem;
+overflow: hidden;
+}
+.lan form{
+width:100%;
+height:100%;
+}
+.lan form ul{
+width:100%;
+height:14.5rem;
+}
+.lan form li{
+width: 100%;
+height:5rem;
+overflow: hidden;
+box-sizing:border-box;
+padding-left:0.8rem;
+border-bottom: 1px solid #E6E6E6;
+}
+.lan .lan_input{
+height:3.5rem;
+width: 100%;
+line-height: 3.5rem;
+}
+.lan .lan_input em{
+width:1.68rem;
+height:100%;
+display: inline-block;
+text-align: right;
+background:  url('../images/my/z1.png') no-repeat center center ;
+background-size:25px ;
+}
+
+.lan .lan_input .e_p{
+background:  url('../images/my/m1.png') no-repeat center left ;
+background-size:25px ;
+}
+.lan .lan_input input{
+background: none;
+outline:none;
+}
+.lan .bot{
+width:100%;
+height:6.4rem;/* 186px */
+}
+.lan .bot input{
+width:100%;
+height:3.6rem;/* 90px */
+display: block;
+background: #F88031;
+margin:1.92rem auto;/* 48px */
+border-radius: 8px;
+}
+
+.third_party{
+width:100%;
+margin:1.5rem 0 0 0 ;
+}
+.t_title{
+width:100%;
+height:1.2rem;
+text-align: center;
+position: relative;
+font-weight: normal;
+}
+.t_title ins{
+width:100%;
+height:2px;
+background: #D7D7D7;
+display: block;
+position: absolute;
+top:50%;
+left:0;
+z-index: -3
+}
+.t_title em{
+height:100%;
+background: #fff;
+padding:0 10px;
+color:#989898;
+}
+.icon{
+width:100%;
+height:5.84rem;
+margin:3.6rem 0;/* 90px */
+overflow: hidden;
+}
+.icon a{
+width: 100%;
+height:100%;
+display: block;
+}
+.icon li{
+width:33.333%;
+height:100%;
+float: left;
+text-align: center;
+color:#9a9a9a;
+font-size: 0.88rem;
+}
+.icon li ins{
+width:4.32rem;/* 108px */
+height:4.32rem;
+background: url('../images/my/WEIXIN.png') no-repeat center center;
+background-size:cover;
+display: block;
+margin:0 auto;
+}
+.icon li .bg{
+background: url('../images/my/QQ.png') no-repeat center center;
+background-size:cover;
+}
+.icon li .bg1{
+background: url('../images/my/WEIBO.png') no-repeat center center;
+background-size:cover;
+}

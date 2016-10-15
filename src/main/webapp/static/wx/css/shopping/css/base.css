@@ -1,0 +1,81 @@
+.clear{clear:both;}
+/* quick_links */
+.quick_links_panel a{
+display:block;
+width:4rem;
+height:4rem;
+overflow:hidden;
+position:relative;
+background: url('../../../images/index/icon.png') no-repeat center center;
+background-size: cover;
+top:0;
+left:0px;
+z-index:1;
+margin:0;
+padding:0;
+}
+.quick_links_panel .quick_toggle{
+position:absolute;
+bottom:0;
+left:0;
+width:40px;
+background:#444851;
+z-index:1;
+}
+.quick_links{
+position:fixed;
+bottom:2rem;
+left:1rem; 
+z-index:2;
+}
+.quick_links a.message_list{
+color:#fff;
+}
+.quick_links li,.quick_toggle li{
+position:relative;
+display:block;
+left:0;
+top:0px;
+}
+.cart_num{
+width:21px;
+height:21px;
+display:block;
+border-radius:50%;
+background:#ed145b;
+text-align:center;
+line-height:21px;
+color:#fff;
+border:1px #fff solid ;
+float: right;
+}
+/*飞入购物车*/
+#plist .btns{
+width:2rem;/* 50px */
+height:2rem;
+position: absolute;
+bottom:2.1rem;
+right:1rem;}
+#plist .btns a{
+width:100%;
+height:100%;
+display: block;
+background:url('../../../images/index/+.png') no-repeat center center ;
+background-size:cover;
+outline:none
+}
+#plist .btn{
+right:0.5rem;
+}
+
+.fly_item{
+width:48px
+;height:48px;
+overflow:hidden;
+position:absolute;
+visibility:hidden;
+border:2px solid red;
+border-radius: 100%;
+opacity:0.9;
+z-index:9999;
+}
