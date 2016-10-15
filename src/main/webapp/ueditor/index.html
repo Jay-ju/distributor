@@ -198,7 +198,6 @@
         ue = UE.getEditor('editor');  
         var content = ue.getContent();  
         var title = document.getElementById("title").value;  
-        var IsUse = "是";  
   
         if ($("#title").val() == "") {  
             $.messager.alert('提示', '公约名称不能为空！', 'Info');  
@@ -207,7 +206,7 @@
   
         $.ajax({  
             type: "POST",  
-            url: "/FreshConfiguration/AddConvention",  
+            url: "${ctx}/sys/article/save",  
             data:{ "Content": content,  
                 "Title": title,  
                 "IsUse": IsUse,  
