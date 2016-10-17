@@ -17,22 +17,25 @@
     </style>
 </head>
 <body>
+
+
 <div id = tittlediv >
-<!--     <h1>完整demo</h1> -->
-<!--     <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script> -->
+
 		<h1 style="text-align: center; margin-top: 10px">
 			<span style="font-size: 24px;"><strong>文章标题：</strong></span>
-			<strong> </strong>
+			    
 			<input id="title" type="text" placeholder="请输入文章标题">
-			<a class="easyui-linkbutton" data-options="iconCls:'icon-save'" href="#" style="margin-left: 80px; text-align: center;" onclick="AddConvention()">保存</a>
-			<a class="easyui-linkbutton" data-options="iconCls:'icon-back'" href="../FreshConfiguration/ConventionConfiguration" style="margin-left: 60px; text-align: center;">返回</a>
+			<a data-options="iconCls:'icon-save'" href="#" style="margin-left: 80px; text-align: center;" onclick="AddConvention()">保存</a>
+<!-- 			<a class="easyui-linkbutton" data-options="iconCls:'icon-back'" href="../FreshConfiguration/ConventionConfiguration" style="margin-left: 60px; text-align: center;">返回</a> -->
 		</h1>
+
 		<!--  @* 编辑器的加载 *@ -->  
-        <center>  
-        <script id="editor" type="text/plain" style="width:900px; height:300px;margin-top:15px;" >  
+        <script id="editor" type="text/plain" width:1024px;height:1000px;" >  
            	请输入文章内容  
         </script>  
 </div>
+
+
 <div id="btns">
     <div>
         <button onclick="getAllHtml()">获得整个html的内容</button>
@@ -185,48 +188,38 @@
 </script>
 
 <script type="text/javascript">  
-    $(document).ready(function () {  
-  
-        ue = UE.getEditor('editor');  
-        ue.ready(function () {  
-        })  
-  
-    })  
   
     function AddConvention() {  
   
         ue = UE.getEditor('editor');  
-        var content = ue.getContent();  
-        var title = document.getElementById("title").value;  
   
         if ($("#title").val() == "") {  
-            $.messager.alert('提示', '公约名称不能为空！', 'Info');  
+            alert('文章标题不能为空！');  
             return;  
         }  
   
         $.ajax({  
             type: "POST",  
-            url: "${ctx}/sys/article/save",  
-            data:{ "Content": content,  
-                "Title": title,  
-                "IsUse": IsUse,  
-                  
+            url: "http://localhost:8080/distributor/sys/article/save",  
+            data:{ title: document.getElementById("title").value,  
+                   content: ue.getContent()                  
             },  
             success: function (data) {  
                 if (data == true) {  
-                    $.messager.alert('提醒', '添加成功');      
+                    alert('提醒添加成功');      
                 }  
                 else {  
-                    $.messager.alert('提示', '已存在同名公约，请重新填写！')  
+                    alert('提示已存在同名文章，请重新填写！')  
                 }  
             },  
             error: function () {  
-                $.messager.alert('提示',"公约添加失败，请联系管理员");  
+                alert("添加失败，请联系管理员");  
             }  
   
         })  
     }  
-  
-</script> 
+ 
+</script>
+	<script type="text/javascript" src="http://localhost:8080/distributor/static/js/jquery/jquery-1.8.3.js"></script>
 </body>
 </html>

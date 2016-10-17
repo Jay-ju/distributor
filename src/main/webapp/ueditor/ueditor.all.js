@@ -9921,7 +9921,7 @@ var LocalStorage = UE.LocalStorage = (function () {
     };
 
     UE.Editor.prototype.getPreferences = function(key){
-    	debugger;
+    	
         var data = LocalStorage.getLocalData(ROOTKEY);
         if (data && (data = utils.str2json(data))) {
             return key ? data[key] : data
@@ -20480,7 +20480,7 @@ UE.plugins['table'] = function () {
         	
             var me = this,
                 args = arguments;
-            debugger;
+           
             cmd = cmd.toLowerCase();
             var ut = getUETableBySelected(me), tds,
                 range = new dom.Range(me.document),
@@ -23958,7 +23958,7 @@ UE.plugin.register('autosave', function (){
 
             'getlocaldata':{
                 execCommand:function (cmd, name) {
-                	debugger;
+                	
                     return saveKey ? me.getPreferences( saveKey ) || '' : '';
                 },
                 notNeedUndo: true,
@@ -26778,7 +26778,7 @@ UE.ui = baidu.editor.ui = {};
             }
             return -1;
         },
-        : function (index){
+        getItem: function (index){
             return this.items[index];
         },
         selectByIndex: function (index){
@@ -29319,7 +29319,7 @@ UE.ui = baidu.editor.ui = {};
      *
      */
     UE.getEditor = function (id, opt) {
-    	debugger;
+    	
         var editor = instances[id];
         if (!editor) {
             editor = instances[id] = new UE.ui.Editor(opt);

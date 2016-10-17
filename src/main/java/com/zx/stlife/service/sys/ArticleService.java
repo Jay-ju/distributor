@@ -17,11 +17,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ArticleService {
 
 	private static Logger logger = LoggerFactory.getLogger(ArticleService.class);
@@ -31,7 +33,7 @@ public class ArticleService {
 
 	@Transactional
 	public void saveArticle(Article article) {
-		articleDao.saveAndFlush(article);
+		articleDao.save(article);
 	}
 
 }
