@@ -162,8 +162,8 @@
 	<import resource="../cache/applicationContext-memcached.xml" />
 
 	<import resource="../schedule/application-quartz.xml" />
-	<import resource="../schedule/application-jdk-timer.xml" />
-	<!--<import resource="../jms/applicationContext-jms.xml" />
+	<!--<import resource="../schedule/application-jdk-timer.xml" />
+	<import resource="../jms/applicationContext-jms.xml" />
 	<import resource="../schedule/applicationContext-spring-scheduler.xml" />
 	<import resource="../schedule/application-jdk-timer.xml" />-->
 </beans>

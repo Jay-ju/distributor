@@ -5,12 +5,6 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="base-common-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/base-common/base-common">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="base-jpa-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/base-jpa/base-jpa">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="java-output-path" value="/stlife/target/classes"/>
         <property name="context-root" value="distributor"/>
     </wb-module>

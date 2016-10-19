@@ -270,14 +270,14 @@ wxcommon.includeCSS('static/wx/js/weixin-jquery/css/jquery-weui.css');
 wxcommon.includeJS('static/wx/js/weixin-jquery/js/jquery-weui.js');
 
 // 添加顶部下拉刷新
-//$('body').children().first().before(
-//    '<div class="weui-pull-to-refresh-layer">' +
-//        '<div class="pull-to-refresh-arrow"></div>' +
-//        '<div class="pull-to-refresh-preloader"></div>' +
-//        '<div class="down">下拉刷新</div>' +
-//        '<div class="up">释放刷新</div>' +
-//        '<div class="refresh">正在刷新</div>' +
-//    '</div>');
+$('body').children().first().before(
+    '<div class="weui-pull-to-refresh-layer">' +
+        '<div class="pull-to-refresh-arrow"></div>' +
+        '<div class="pull-to-refresh-preloader"></div>' +
+        '<div class="down">下拉刷新</div>' +
+        '<div class="up">释放刷新</div>' +
+        '<div class="refresh">正在刷新</div>' +
+    '</div>');
 
 $(document.body).pullToRefresh().on("pull-to-refresh", function() {
     if($('div.weui_toast_visible').length < 1){ // 当没有显示加载框时才可以刷新

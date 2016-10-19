@@ -4,6 +4,7 @@ encoding//src/main/resources=UTF-8
 encoding//src/main/resources/application.properties=UTF-8
 encoding//src/main/resources/express.properties=UTF-8
 encoding//src/main/resources/weixin.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/views/article/article-preview-content.jsp=UTF-8
 encoding//src/main/webapp/static/wx/css/goods.css=UTF-8
 encoding//src/main/webapp/static/wx/css/past.css=UTF-8
 encoding//src/main/webapp/static/wx/css/style.css=UTF-8

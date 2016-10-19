@@ -72,12 +72,12 @@
 	                    </li>
                    	</shiro:hasAnyPermissions>
                    	
-                	<shiro:hasAnyPermissions name="notice:notice:view,notice:noticeMessage:view,notice:noticeWithdraw:view,notice:noticeOnlySend:view">
+                	<shiro:hasAnyPermissions name="notice:notice:view,notice:noticeMessage:view,notice:noticeWithdraw:view,notice:noticeOnlySend:view,article:article:view">
 	                    <li>
 	                        <a href="#"><i class="fa fa-bell-o"></i> <span class="nav-label">文章管理</span><span class="fa arrow"></span></a>
 	                        <ul class="nav nav-second-level">
-	                        <shiro:hasAnyPermissions name="notice:notice:view">
-	                            <li><a class="J_menuItem" href="${ctx }/notice/notice/list">文章编辑</a>
+	                        <shiro:hasAnyPermissions name="article:article:view">
+	                            <li><a class="J_menuItem" href="${ctx }/article/article/list">文章编辑</a>
 	                            </li>
 	                        </shiro:hasAnyPermissions>
 	                        <shiro:hasAnyPermissions name="notice:noticeMessage:view,notice:noticeWithdraw:view,notice:noticeOnlySend:view">
